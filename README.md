@@ -9,12 +9,17 @@ Usage
 -----
 
 [View the documentation](https://swri-robotics.github.io/mapviz/) for usage information.
+
+Relevant links / github repos: 
+
 https://github.com/danielsnider/MapViz-Tile-Map-Google-Maps-Satellite
+
 http://docs.ros.org/en/noetic/api/nav_msgs/html/msg/Odometry.html
+
 http://docs.ros.org/en/kinetic/api/gps_common/html/msg/GPSFix.html
+
 http://docs.ros.org/en/melodic/api/inertial_sense/html/msg/GPS.html
 
-Change this later into nicer words lol
 
 In all separate termials, run:
 
@@ -59,4 +64,4 @@ Then, in the Topic, select 'gps_converted'.
 Click OK on selected topic.
 There should be no errors when it runs --> should just say status is OK.
 
-Make sure that the gps is below the tile_map, since the order matters. It will draw from top to bottom
+Make sure that the gps is below the tile_map, since the order matters. It will draw in order from top to bottom.
