@@ -53,7 +53,7 @@ Run MapViz
 
 `roslaunch mapviz mapviz.launch`
 
-Make sure that it's map and map for the fixed frame and the other frame
+(This may be different for everyone, but for Ellen's computer) Make sure that it's map for Fixed Frame and map for Target Frame
 
 Do all the instructions in the Google Maps Offline capability github mentioned above
 
