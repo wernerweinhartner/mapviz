@@ -65,3 +65,20 @@ Click OK on selected topic.
 There should be no errors when it runs --> should just say status is OK.
 
 Make sure that the gps is below the tile_map, since the order matters. It will draw in order from top to bottom.
+
+
+--------
+For INS
+(not necessary, but you can run the ins sub / pub file through) `rosrun mapviz listener_ins.py`
+
+make sure to run it by 
+`rosrun mapviz mapviz.launch`
+
+To view frames, do 
+
+`rosrun tf view_frames`
+
+`evince frames.pdf`
+
+
+Make sure fixed frame is map and target frame is ins_base_link. The arrows appear, but the transforms are messed up. Eg. map coords are 10,000x too big, and lat/lon are also messed up. Fix these later
