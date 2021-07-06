@@ -81,4 +81,4 @@ To view frames, do
 `evince frames.pdf`
 
 
-Make sure fixed frame is map and target frame is ins_base_link. The arrows appear, but the transforms are messed up. Eg. map coords are 10,000x too big, and lat/lon are also messed up. Fix these later
+Make sure fixed frame is map and target frame is ins_base_link. The arrows appear, but the transforms are messed up. Eg. map coords are 10,000x too big, and lat/lon are also messed up. Fix these later. + if you do this, the tile_map no longer shows up
