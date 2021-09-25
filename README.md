@@ -20,6 +20,10 @@ http://docs.ros.org/en/kinetic/api/gps_common/html/msg/GPSFix.html
 
 http://docs.ros.org/en/melodic/api/inertial_sense/html/msg/GPS.html
 
+To set up the IMU with your Linux: https://github.com/rsx-utoronto/rover/wiki/Connecting-Your-Computer-to-IMU
+
+----
+
 
 In all separate termials, run:
 
@@ -69,6 +73,7 @@ Make sure that the gps is below the tile_map, since the order matters. It will d
 
 --------
 For INS
+
 (not necessary, but you can run the ins sub / pub file through) `rosrun mapviz listener_ins.py`
 
 make sure to run it by 
@@ -82,3 +87,10 @@ To view frames, do
 
 
 Make sure fixed frame is map and target frame is ins_base_link. The arrows appear, but the transforms are messed up. Eg. map coords are 10,000x too big, and lat/lon are also messed up. Fix these later. + if you do this, the tile_map no longer shows up
+
+--------
+Future projects:
+1. Polish up the IMU simulation python file
+2. Create a script that will simultaneously open terminals and run the required commands to streamline process.
+3. Make the frames compatible for the GPS and the IMU measurements -- right now, GPS uses a different frame than IMU. This makes it so you will have the location, but not the orientation of the IMU unit, which we need.
+4. Create a marker or a more user friendly way of showing an orientation with the IMU measurement units.
